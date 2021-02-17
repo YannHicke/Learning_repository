@@ -6,7 +6,7 @@ if __name__ == "__main__":
     from sklearn.metrics import mean_absolute_error
     
     # reads the data and converts date in the right format
-    df = pd.read_csv('/home/dq/scripts/sphist.csv')
+    df = pd.read_csv('sphist.csv')
     df["Date"] = df["Date"].astype('datetime64[ns]')
 
     df.sort_values("Date",inplace=True)
